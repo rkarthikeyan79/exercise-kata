@@ -14,3 +14,4 @@ it('renders the value passed to it', () => {
 it('has an "onClick" property', () => {
     expect(shallow(<Square/>).props()).toHaveProperty('onClick');
 });
+
