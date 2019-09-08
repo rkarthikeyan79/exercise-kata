@@ -1,5 +1,5 @@
 import React from 'react';
-import Board from '../Board/board'
+import Board from '../board/board'
 
 
 function calculateWinner(squares) {
@@ -106,7 +106,7 @@ export default class Game extends React.Component {
       status = 'Game drawn';
     }
     else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      status = (this.state.xIsNext ? "X" : "O") + "'s Turn";
 
     }
 
